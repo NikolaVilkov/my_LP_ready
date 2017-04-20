@@ -1,0 +1,387 @@
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+body {
+    font: 12px/18px Arial, sans-serif;
+}
+.wrapper {
+    width: 100%;
+    min-width: 1000px;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+
+}
+aside, footer, address, section {
+    display:block;
+}
+img, iframe, video, embed {
+    max-width:100%!important;
+}
+/* Tipografica*/
+.flex-container {
+  list-style: none;
+  margin: 0; 
+  background: deepskyblue;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+#header p {
+   font: italic 1.8em 'PT Sans Narrow', sans-serif;
+   font-weight: bold;
+   color: #5E2B0C;
+   padding-top: 14em;
+   text-align: center;
+}
+#about_me .layout p {
+    margin-top: 5em;
+    width: 70%;
+    float: right;
+    font: italic 1.1em 'PT Sans Narrow', sans-serif;
+} 
+h2 {
+    font: italic 1.8em 'PT Sans Narrow', sans-serif;
+    text-align: center;
+    color: #5E2B0C;
+    font-weight: bold;   
+}
+h3 {
+    font: italic 1.6em 'PT Sans Narrow', sans-serif;
+    text-align: center;
+    color: #5E2B0C;
+    font-weight: bold;
+}
+#learn .layout span{
+    width: 70%;
+    font: italic 1.1em 'PT Sans Narrow', sans-serif;
+}
+#screen .layout span{
+    display: block;
+    font: bold 1.6em 'PT Sans Narrow', sans-serif;
+    
+    text-align: center;
+
+}
+#screen .layout p {
+    text-align: center;
+    margin-top: 1em;
+    font: italic 1.3em 'PT Sans Narrow', sans-serif;
+}
+#lessons .layout span{
+    width: 70%;
+    font: italic 1.1em 'PT Sans Narrow', sans-serif;
+}
+#order .layout span {
+    width: 70%;
+    font: italic 1.1em 'PT Sans Narrow', sans-serif;
+}
+.button {
+    background: #fed136;
+    display: block;
+    font: bold 1.3em 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    width: 240px;
+    margin: 2em  auto;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.3em 0;
+    border-radius: 7px;
+}
+
+
+#footer .layout a {
+    cursor: pointer;
+    color: #00FFFF;
+}
+/* Layout */
+#page {
+    width: 100%;
+    font: 100% 'PT Sans Narrow', sans-serif;
+}
+
+#header {
+    background: url(../img/header.jpg) no-repeat;
+    height: 30em;
+}
+
+.layout {
+    width: 940px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+.flex-container a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  font: italic 1.6em 'PT Sans Narrow', sans-serif;
+
+}
+.flex-container a:hover {
+background: darken(deepskyblue, 2%);
+}
+
+#about_me {
+    margin-top: 14em;
+    background: url(../img/back-3.png) no-repeat;
+    height: 28.5em;
+    margin-bottom: 2.2em;
+}
+
+#learn {  
+background-color: #fff;  
+}
+#learn .layout {
+    width: 75%;
+    margin-top: 4em; 
+}
+#screen  {
+    background: url(../img/back-5.jpg) no-repeat;
+
+    
+}
+#screen .layout {
+width: 70%
+}
+#footer {
+    background: url(../img/back-10.jpg) no-repeat;
+}
+#footer .layout p {
+    color: #fff;
+    text-align: center;
+    margin-top: 1em;
+    font: italic 1.3em 'PT Sans Narrow', sans-serif;
+}
+
+#toTop {
+width:100px;
+border:1px solid #ccc;
+background:rgba(0,0,0,0.5);
+text-align:center;
+padding:.5em 15px;
+position:fixed;
+bottom:2em;
+right:30px;
+cursor:pointer;
+display:none;
+color:#fff;
+font-size:1em;
+}
+
+#toTop:hover{
+background:rgba(0,0,0,0.9);
+}
+/*--------Adaptiv for device--*/
+ /*---1024px---*/
+
+@media screen and (max-width:1024px), only screen and (max-device-width:1024px) 
+{
+   .footer {
+    width: 1024px;
+   } 
+   .header {
+    width: 1024px;
+   }
+   #about_me .layout {
+    width: 69%;
+    padding-left: 8%; 
+   }
+
+  #learn .layout h2 {
+    margin-top: 2em;
+  }
+}
+
+/*---854px---*/
+
+@media screen and (max-width:854px), only screen and (max-device-width:854px) 
+{
+   .footer {
+    width: 854px;
+   } 
+   .header {
+    width: 854px;
+   }
+   #about_me {
+    background: url(../img/back-3_854.png) no-repeat;
+   }
+
+}
+/*---800px---*/
+@media screen and (max-width:800px), only screen and (max-device-width:800px)
+{
+   .footer {
+    width: 800px;
+   } 
+   .header {
+    width: 800px;
+   }
+   #about_me {
+    background: url(../img/back-3_854.png) no-repeat;
+   }
+
+}
+
+/*---768px---*/
+
+@media screen and (max-width:768px), only screen and (max-device-width:768px)
+{
+   .footer {
+    width: 768px;
+   } 
+   .header {
+    width: 768px;
+   }
+   #about_me {
+    background: url(../img/back-3_854.png) no-repeat;
+   }
+
+}
+/*---640px---*/
+
+@media screen and (max-width:640px), only screen and (max-device-width:640px)
+{
+   .footer {
+    width: 640px;
+   } 
+   .header {
+    width: 640px;
+   }
+   #about_me {
+    background: url(../img/back-3_854.png) no-repeat;
+   }
+
+}
+/*---600px---*/
+
+@media screen and (max-width:600px), only screen and (max-device-width:600px)
+{
+   .footer {
+    width: 600px;
+   } 
+   .header {
+    width: 600px;
+   }
+   #about_me {
+    background: url(../img/back-3_854.png) no-repeat;
+   }
+
+}
+/*---480px---*/
+
+@media screen and (max-width:480px), only screen and (max-device-width:480px)
+{
+   .footer {
+    width: 480px;
+   } 
+   .header {
+    width: 480px;
+   }
+   #about_me {
+    background: url(../img/back-3_854.png) no-repeat;
+   }
+
+}
+/*---360px---*/
+
+@media screen and (max-width:360px), only screen and (max-device-width:360px)
+{
+   .footer {
+    width: 360px;
+   } 
+   .header {
+    width: 360px;
+   }
+   #about_me {
+    background: url(../img/back-3_854.png) no-repeat;
+   }
+   #learn .layout h2 {
+    margin-top: 11em;
+  }
+  #footer {
+    height: 15em;
+    color: #fff;
+    text-align: center;
+    margin-top: 1em;
+    font: italic 1.4em 'PT Sans Narrow', sans-serif;
+  }
+  .button {
+    background: #fed136;
+    display: block;
+    font: bold 2em 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    width: 240px;
+    margin: 2em  auto;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.3em 0;
+    border-radius: 7px;
+}
+}
+
+/*---320px---*/
+
+@media screen and (max-width:320px), only screen and (max-device-width:320px)
+{
+   .footer {
+    width: 320px;
+   } 
+   .header {
+    width: 320px;
+   }
+   #about_me {
+    background: url(../img/back-3_854.png) no-repeat;
+   }
+   #learn .layout h2 {
+    margin-top: 17em;
+  }
+  #footer {
+    height: 15em;
+    color: #fff;
+    text-align: center;
+    margin-top: 1em;
+    font: italic 1.4em 'PT Sans Narrow', sans-serif;
+  }
+  .button {
+    background: #fed136;
+    display: block;
+    font: bold 2em 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    width: 240px;
+    margin: 2em  auto;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.3em 0;
+    border-radius: 7px;
+}
+}
